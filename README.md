@@ -5,11 +5,8 @@ Sokoban is a classic Japanese puzzle game. The rules are simple: the player push
 * Users can push boxes around the game board using the arrow keys until there are no more possible moves or the game is won.
 * Users can select a puzzle from several options of varying difficulty.
 * The current game board can be reset to its original state by clicking a button.
-* A move counter and timer will keep track of the player's progress.
-* Landing modal explaining the rules and controls.
-
-Bonus features:
-* Top scores keeping track of best move counts and times.
+* A move counter and timer that keeps track of the player's progress
+* A landing modal explaining the rules and controls
 
 ## Wireframes
 Main Game Page
@@ -26,7 +23,7 @@ This project will use JavaScript (ES6) for game logic; HTML, CSS, and Canvas to 
 
 ### Timeline
 **Phase 1**
-* Setup project skeleton, configure webpack,
+* Setup project skeleton, configure webpack
 * Implement canvas drawing using tiled background to render board
 * Add character and controls to move around the game board
 
@@ -38,3 +35,7 @@ This project will use JavaScript (ES6) for game logic; HTML, CSS, and Canvas to 
 **Phase 3**
 * Add move counter and timer
 * Clean up styling, implement landing modal
+
+## Bonus features
+* Top scores keeping track of best move counts and times
+* History to track and redo/undo moves
