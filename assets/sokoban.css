@@ -1,0 +1,19 @@
+/* RESET */
+h1, div, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
