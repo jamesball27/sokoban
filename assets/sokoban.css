@@ -17,3 +17,7 @@ h1, div, canvas {
 body {
   font-family: Helvetica, sans-serif;
 }
+
+.hidden {
+  display: none;
+}
