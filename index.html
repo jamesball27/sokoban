@@ -9,20 +9,22 @@
   <body>
     <h1 id="header">Sokoban</h1>
 
-    <h2>Select a level!</h2>
-    <select id="levels">
+    <div class="game-info">
+      <h3>Moves: <span id="move-counter"></span></h3>
+      <h3>Time: <span id="timer">00:00</span></h3>
+      <button id="reset">Reset Level</button>
+    </div>
 
-    </select>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <div id="game"></div>
 
-    <button id="reset">Reset Level</button>
+    <div class="levels">
+      <h2>Select a level!</h2>
+      <select id="levels"></select>
+    </div>
 
     <section id="win-modal" class="hidden">
       <h2>You Won!</h2>
     </section>
-
-    <h3>Moves: <span id="move-counter"></span></h3>
-    <h3>Time: <span id="timer">00:00</span></h3>
-    <canvas id="canvas" width="1000" height="1000"></canvas>
-
   </body>
 </html>
