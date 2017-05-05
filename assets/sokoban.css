@@ -88,12 +88,16 @@ h3 {
   z-index: 1000;
   top: 50%;
   left: 50%;
-  width: 400px;
   padding: 50px;
-  margin-left: -250px;
+  margin-left: -140px;
   transform: translateY(-50%);
   background: white;
   border-radius: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 .canvas-div {
@@ -155,11 +159,16 @@ li span {
 .select:hover {
   background: inherit;
 }
+
 #reset {
   padding: 5px;
   font-size: 20px;
   transition: transform .25s;
   padding: 0 20px;
+}
+
+#next-level {
+  font-size: 20px;
 }
 
 button:hover {
