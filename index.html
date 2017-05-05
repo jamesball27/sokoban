@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <title>Sokoban!</title>
     <script type="text/javascript" src="./lib/bundle.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./assets/sokoban.css">
   </head>
   <body>
-    <h1 id="header">Sokoban</h1>
+    <h1 id="header">Sokoban!</h1>
 
-    <div class="game-info">
-      <h3>Moves: <span id="move-counter"></span></h3>
-      <h3>Time: <span id="timer">00:00</span></h3>
-      <button id="reset">Reset Level</button>
+    <div class="canvas-div">
+      <div class="game-info">
+        <h3>Moves: <span id="move-counter"></span></h3>
+        <h3>Time: <span id="timer">00:00</span></h3>
+        <button id="reset">Reset Level</button>
+      </div>
+      <canvas id="canvas"></canvas>
     </div>
-
-
-    <canvas id="canvas"></canvas>
 
     <div class="levels">
       <h2>Select a level!</h2>
