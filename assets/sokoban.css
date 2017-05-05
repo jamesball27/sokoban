@@ -1,5 +1,5 @@
 /* RESET */
-h1, div, canvas, ul, li, span {
+h1, div, canvas, ul, li, span, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -128,8 +128,9 @@ li:hover {
   transform: scale(1.15);
 }
 
-span {
+li span {
   display: inline-block;
+  font-size: 14px;
 }
 
 .completed {
@@ -139,6 +140,7 @@ span {
 .completed:hover {
   background: #57ad6b;
 }
+
 .completed:before {
   content: "Completed!";
   font-size: 20px;
@@ -148,4 +150,20 @@ span {
   background: #559ed8;
   color: #fff;
   transform: scale(1.15);
+}
+
+.select:hover {
+  background: inherit;
+}
+#reset {
+  padding: 5px;
+  font-size: 20px;
+  transition: transform .25s;
+  padding: 0 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #559ed8;
+  transform: scale(1.05);
 }
