@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="./assets/sokoban.css">
   </head>
   <body>
-    <h1 id="header">Sokoban!</h1>
+    <div class="left">
+      <h1 id="header">Sokoban!</h1>
+
+      <div class="levels">
+        <h2>Select a level:</h2>
+        <ul id="levels"></ul>
+      </div>
+    </div>
 
     <div class="canvas-div">
       <div class="game-info">
@@ -17,11 +24,6 @@
         <button id="reset">Reset Level</button>
       </div>
       <canvas id="canvas"></canvas>
-    </div>
-
-    <div class="levels">
-      <h2>Select a level!</h2>
-      <ul id="levels"></ul>
     </div>
 
     <div id="win-modal" class="modal">

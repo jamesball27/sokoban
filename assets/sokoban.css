@@ -16,23 +16,26 @@ h1, div, canvas, ul, li, span {
 
 html {
   background: url("shl.png");
+  height: 100%;
 }
 
 body {
   font-family: Helvetica, sans-serif;
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
   width: 80%;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-main {
+.left {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
 }
 
 h1 {
@@ -94,15 +97,16 @@ h3 {
 }
 
 .canvas-div {
-  height: 712px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  margin: 200px auto 0 auto;
 }
 
 .levels ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -115,10 +119,13 @@ h3 {
   align-items: center;
   width: 150px;
   font-size: 20px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: transform .25s;
 }
 
 li:hover {
-  background: yellow;
+  transform: scale(1.15);
 }
 
 span {
@@ -126,10 +133,19 @@ span {
 }
 
 .completed {
-  background: green;
+  background: #57ad6b;
 }
 
-.completed:after {
+.completed:hover {
+  background: #57ad6b;
+}
+.completed:before {
   content: "Completed!";
   font-size: 20px;
+}
+
+.selected {
+  background: #559ed8;
+  color: #fff;
+  transform: scale(1.15);
 }
