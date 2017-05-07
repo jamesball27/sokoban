@@ -80,7 +80,7 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -91,8 +91,8 @@ h3 {
   padding: 50px;
   margin-left: -140px;
   transform: translateY(-50%);
-  background: white;
-  border-radius: 5px;
+  background: #f6f6f6;
+  border-radius: 40px;
   text-align: center;
 }
 
@@ -145,6 +145,7 @@ li span {
 li.completed {
   background: transparent;
   color: inherit;
+  border-radius: 20px;
 }
 
 .completed:before {
@@ -173,4 +174,40 @@ button:hover {
   cursor: pointer;
   color: #559ed8;
   transform: scale(1.05);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 20px;
+  transform: none;
+}
+
+.link a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  transform: none;
+}
+
+.link a:hover {
+  color: #559ed8;
+}
+
+.link:active {
+  box-shadow: none;
+  transform: none;
 }
