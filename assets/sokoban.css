@@ -150,9 +150,9 @@ li.completed {
   position: absolute;
   z-index: 1000;
   top: 50%;
-  left: 50%;
+  left: 33%;
+  right: 33%;
   padding: 50px;
-  margin-left: -140px;
   transform: translateY(-50%);
   background: #f6f6f6;
   border-radius: 40px;
@@ -166,8 +166,9 @@ li.completed {
   padding: 0 20px;
 }
 
-#next-level {
+.button {
   font-size: 20px;
+  margin: 10px;
 }
 
 button:hover {
@@ -189,7 +190,7 @@ nav ul {
 nav ul li {
   font-size: 14px;
   padding: 10px;
-  margin: 0 20px;
+  margin: 0 10px;
   transform: none;
 }
 
