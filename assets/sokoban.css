@@ -116,20 +116,25 @@ h2 {
 
 .levels ul li {
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #a8a8a8;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 150px;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 40px;
   margin: 5px;
-  transition: transform .25s;
 }
 
 li:hover {
-  transform: scale(1.15);
+  transition: transform .15s;
+  transform: scale(1.1);
+}
+
+li:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 li span {
@@ -137,27 +142,20 @@ li span {
   font-size: 14px;
 }
 
-.completed {
-  background: #57ad6b;
-}
-
-.completed:hover {
-  background: #57ad6b;
+li.completed {
+  background: transparent;
+  color: inherit;
 }
 
 .completed:before {
-  content: "Completed!";
+  content: "✔ Completed ✔";
   font-size: 20px;
+  color: #57ad6b;
 }
 
 .selected {
-  background: #559ed8;
-  color: #fff;
-  transform: scale(1.15);
-}
-
-.select:hover {
-  background: inherit;
+  color: #eb604d;
+  transform: scale(1.1);
 }
 
 #reset {
