@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./assets/sokoban.css">
   </head>
   <body>
+    <nav>
+      <ul>
+        <li class="link">&copy; James Ball</li>
+        <li class="link"><a href="https://github.com/jamesball27">Github</a></li>
+        <li class="link"><a href="#">Portfolio</a></li>
+        <li class="link"><a href="https://www.linkedin.com/in/jamesball27/">LinkedIn</a></li>
+      </ul>
+    </nav>
+
     <div class="left">
       <h1 id="header">Sokoban!</h1>
 
@@ -26,7 +35,7 @@
       <canvas id="canvas"></canvas>
     </div>
 
-    <div id="win-modal" class="modal">
+    <div id="win-modal" class="hidden">
      <section class="modal-content">
        <h2>Congratulations!</h2>
        <button id=next-level>Next level?</button>
@@ -34,7 +43,7 @@
      <div class="modal-screen"></div>
     </div>
 
-    <div id="completed-all" class="modal">
+    <div id="completed-all" class="hidden">
       <section class="modal-content">
         <h2>Congratulations!</h2>
         <h3>You completed all available levels. Great job!</h3>
@@ -43,12 +52,17 @@
     </div>
   </body>
 
-  <nav>
-    <ul>
-      <li class="link">&copy; James Ball</li>
-      <li class="link"><a href="https://github.com/jamesball27">Github</a></li>
-      <li class="link"><a href="#">Portfolio</a></li>
-      <li class="link"><a href="https://www.linkedin.com/in/jamesball27/">LinkedIn</a></li>
-    </ul>
-  </nav>
+  <div id="welcome-modal">
+    <section class="modal-content">
+      <h1>Welcome to Sokoban!</h1>
+      <p>You are a factory worker who is tasked with organizing the warehouse. <br> Your goal is to clean up the warehouse floor by pushing all crates <img src="assets/crate_02.png" alt="Crate"> onto the designated storage spaces <img src="assets/environment_08.png" alt="Goal">.
+      <br>
+      The crates are extremely heavy, so there are a few safety regulations in place: <br>
+      1. Crates may only be pushed from behind.<br>
+      2. You may only push one crate at a time.</p>
+      <h3>Click anywhere to begin!</h3>
+    </section>
+    <div class="modal-screen"></div>
+  </div>
+
 </html>

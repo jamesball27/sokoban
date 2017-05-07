@@ -65,7 +65,7 @@ h3 {
   width: 100%;
 }
 
-.modal {
+.hidden {
   display: none;
 }
 
@@ -210,4 +210,24 @@ nav ul li {
 .link:active {
   box-shadow: none;
   transform: none;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2;
+}
+#welcome-modal .modal-screen {
+  background: rgba(0, 0, 0, 1);
+}
+
+#welcome-modal .modal-content {
+  margin-left: 0;
+  left: 20%;
+  right: 20%;
+}
+
+#welcome-modal img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 }

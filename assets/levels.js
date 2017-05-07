@@ -5,7 +5,7 @@
 // . Goal square
 // + Character on goal square
 
-export const LEVELS = {
+const LEVELS = {
   0:
     [
       ['#','#','#','#','#','#','#'],
@@ -90,3 +90,5 @@ export const LEVELS = {
       ['#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#']
     ]
 };
+
+export default LEVELS;
