@@ -136,6 +136,9 @@ li.completed {
   display: block;
 }
 
+#win-modal {
+  opacity: 1;
+}
 .modal-screen {
   position: fixed;
   top: 0;
@@ -144,6 +147,7 @@ li.completed {
   height: 100%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.9);
+  transition: opacity 1s;
 }
 
 .modal-content {
