@@ -1,7 +1,7 @@
 # Sokoban!
 Sokoban is a classic Japanese puzzle game. The rules are simple: the player pushes boxes around a maze-like game board with the goal of placing all of the boxes on designated storage spaces.
 
-[Sokoban Live!](http://jball.co/sokoban)
+[Sokoban Live!](https://jamesball.dev/sokoban)
 
 ## Playing the Game
 
